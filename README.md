@@ -1,2 +1,9 @@
-# test
-just for test
+# Note
+* Git config user name and emal
+  
+* How to setup to avoid typing passward everytime git access remote repository ?
+  git config --global credential.helper 'cache --timeout=86400' //input pwd one time per day
+  git config --global credential.helper store //save pwd permanently
+  
+ 
+  
