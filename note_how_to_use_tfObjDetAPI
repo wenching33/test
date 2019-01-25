@@ -1,0 +1,27 @@
+Transfer learning using my own data:
+Step1:
+Prepare my own data and put them in two folders:
+-annotations
+-images
+Step2:
+Using tools to transfer them into .tfrecords
+Step3: 
+Put them into proper folder structure
+Models/
+  model/
+    model.ckpt
+Data/
+  *.tfrecord
+   XXX_lable_map.pbtxt
+
+Step4:
+Do training.
+
+Step5:
+Export trained model to frozen .pb model
+
+Step6: 
+Modify main.py under ~/tensorflow/models/research/object_detection/
+(change model path)
+& change test images under  ~/tensorflow/models/research/object_detection/test_images/
+& run python main.py ==>output wenching*.jpg check it!
